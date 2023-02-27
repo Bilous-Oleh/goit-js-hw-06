@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  width: 320px;
 }
 
 body {
@@ -29,6 +30,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 320px;
 }
 
 .grid__item {
