@@ -7,14 +7,15 @@ const ingredients = [
   "Condiments",
 ];
 const siteNavEl = document.querySelector("#ingredients");
-console.log(siteNavEl);
+const arrayItems = [];
 
-ingredients.forEach((element) => {
+ingredients.forEach((ingredient) => {
   const navItemEl = document.createElement("li");
-  console.log(navItemEl);
 
-  navItemEl.classList.add("site-nav__item");
-  navItemEl.textContent = element;
+  navItemEl.classList.add("item");
+  navItemEl.textContent = ingredient;
 
-  siteNavEl.append(navItemEl);
+  arrayItems.push(navItemEl);
 });
+
+siteNavEl.append(...arrayItems);

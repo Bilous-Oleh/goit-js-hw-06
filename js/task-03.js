@@ -29,5 +29,3 @@ imageEl.insertAdjacentHTML("afterbegin", markup);
 
 const listEl = document.querySelectorAll("li");
 listEl.forEach((element) => element.classList.add("grid__item"));
-
-console.log(imageEl);
